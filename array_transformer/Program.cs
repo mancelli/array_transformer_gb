@@ -22,4 +22,14 @@ for (count = 0; count<actualArray.Length; count++)
         shortCount++;
     } 
 }
-
+string[] result = new string[shortCount];
+shortCount = 0;
+for (count = 0; count<actualArray.Length; count++)
+{
+    if(actualArray[count].Length<4)
+    {
+        result[shortCount] = actualArray[count];
+        System.Console.WriteLine(result[shortCount]);
+        shortCount++;
+    } 
+}
